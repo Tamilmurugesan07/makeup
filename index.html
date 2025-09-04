@@ -1,0 +1,460 @@
+Here’s a validation & smooth scroscrscrscroscr
+
+---
+
+✅ Full CodeC
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Makeup Artist Portfolio</title>
+
+<style>
+
+  * {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+
+  }
+
+  body {
+
+    background: #fff5f8;
+
+    color: #333;
+
+  }
+
+  header {
+
+    background: #ff4f87;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 20px;
+
+  }
+
+  nav {
+
+    background: #ff94b6;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 10px;
+
+  }
+
+  nav a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+  }
+
+  nav a:hover {
+
+    color: #ff4f87;
+
+    background: #fff;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+  }
+
+  section {
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    background: #fff;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  }
+
+  h2 {
+
+    color: #ff4f87;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+
+  }
+
+  .about img {
+
+    width: 150px;
+
+    border-radius: 50%;
+
+    display: block;
+
+    margin: 10px auto;
+
+  }
+
+  .about p {
+
+    text-align: center;
+
+    font-size: 18px;
+
+    margin-top: 10px;
+
+  }
+
+  .hobbies-list {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+  }
+
+  .hobby {
+
+    background: #ffe1ec;
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+  }
+
+  .projects {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 15px;
+
+  }
+
+  .project-card {
+
+    background: #ffe1ec;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+  }
+
+  form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+  }
+
+  input, textarea {
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    outline: none;
+
+  }
+
+  button {
+
+    background: #ff4f87;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 10px;
+
+    font-size: 16px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+  }
+
+  button:hover {
+
+    background: #d93b6d;
+
+  }
+
+  footer {
+
+    text-align: center;
+
+    padding: 15px;
+
+    background: #ff94b6;
+
+    color: #fff;
+
+    margin-top: 20px;
+
+  }
+
+  #formMsg {
+
+    text-align: center;
+
+    margin-top: 10px;
+
+    font-weight: bold;
+
+  }
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+  <h1>My Makeup Portfolio</h1>
+
+  <p>Creating Beauty with Art</p>
+
+</header>
+
+<nav>
+
+  <a href="#about">About Me</a>
+
+  <a href="#hobbies">Hobbies</a>
+
+  <a href="#projects">Projects</a>
+
+  <a href="#contact">Contact</a>
+
+</nav>
+
+<section id="about" class="about">
+
+  <h2>About Me</h2>
+
+  <img src="https://via.placeholder.com/150" alt="Profile Picture">
+
+  <p>Hello! I am a passionate makeup artist who loves bringing out the beauty in everyone. I specialize in bridal, party, and creative looks.</p>
+
+</section>
+
+<section id="hobbies">
+
+  <h2>Hobbies</h2>
+
+  <div class="hobbies-list">
+
+    <div class="hobby">Makeup Art</div>
+
+    <div class="hobby">Photography</div>
+
+    <div class="hobby">Fashion Styling</div>
+
+    <div class="hobby">Blogging</div>
+
+    <div class="hobby">Traveling</div>
+
+  </div>
+
+</section>
+
+<section id="projects">
+
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="project-card">
+
+      <h3>Bridal Makeup</h3>
+
+      <p>Elegant bridal looks for weddings.</p>
+
+    </div>
+
+    <div class="project-card">
+
+      <h3>Creative Shoots</h3>
+
+      <p>Artistic makeup for fashion shoots.</p>
+
+    </div>
+
+    <div class="project-card">
+
+      <h3>Party Glam</h3>
+
+      <p>Stylish looks for special occasions.</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="contact">
+
+  <h2>Contact Me</h2>
+
+  <form id="contactForm">
+
+    <input type="text" id="name" placeholder="Your Name">
+
+    <input type="email" id="email" placeholder="Your Email">
+
+    <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+
+    <button type="submit">Send Message</button>
+
+  </form>
+
+  <p id="formMsg"></p>
+
+</section>
+
+<footer>
+
+  <p>&copy; 2025 My Makeup Portfolio | All Rights Reserved</p>
+
+</footer>
+
+<script>
+
+  // Smooth scrolling
+
+  document.querySelectorAll('nav a').forEach(link => {
+
+    link.addEventListener('click', e => {
+
+      e.preventDefault();
+
+      document.querySelector(link.getAttribute('href')).scrollIntoView({
+
+        behavior: 'smooth'
+
+      });
+
+    });
+
+  });
+
+  // Contact form validation
+
+  const form = document.getElementById('contactForm');
+
+  const formMsg = document.getElementById('formMsg');
+
+  form.addEventListener('submit', e => {
+
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+
+    const email = document.getElementById('email').value.trim();
+
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+
+      formMsg.style.color = 'red';
+
+      formMsg.textContent = 'Please fill in all fields!';
+
+    } else if (!/^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email)) {
+
+      formMsg.style.color = 'red';
+
+      formMsg.textContent = 'Enter a valid email!';
+
+    } else {
+
+      formMsg.style.color = 'green';
+
+      formMsg.textContent = 'Message sent successfully!';
+
+      form.reset();
+
+    }
+
+  });
+
+</script>
+
+</body>
+
+</html>
+
+---
+
+✅ Features:
+
+✔ About Me section with image
+
+✔ Hobbies displayed in styled boxes
+
+✔ Projects in responsive grid
+
+✔ Contact form with JavaScript validation
+
+✔ Smooth scrolling navigation
+
+✔ Makeup theme colors (pink shades)
+
+
+
+
+
